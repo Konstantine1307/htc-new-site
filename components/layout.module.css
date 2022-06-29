@@ -1,0 +1,21 @@
+.main { 
+    background-image: linear-gradient(100deg,
+                hsl(229deg 58% 4%) 0%,
+                hsl(227deg 44% 6%) 31%,
+                hsl(226deg 39% 8%) 44%,
+                hsl(224deg 42% 10%) 53%,
+                hsl(0deg 14% 19%) 56%,
+                hsl(223deg 39% 23%) 75%,
+                hsl(224deg 37% 28%) 81%,
+                hsl(225deg 36% 34%) 91%,
+                hsl(226deg 35% 40%) 100%);
+    color: white;      
+    background-position: center; 
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+
+
+
+
