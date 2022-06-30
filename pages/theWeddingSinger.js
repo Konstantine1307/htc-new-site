@@ -97,15 +97,17 @@ function TheWeddingSinger() {
       <div className="container pt-3  flex justify-end">
         <GoToProductions />
       </div>
-      <TwoTextCards
-        title="The Wedding Singer"
-        text1="Based on the Hollywood movie starring Adam Sandler and Drew
-          Barrymore, comes a hilarious musical comedy that celebrates all
-          the fun of the ’80s. Yes, hair is big, collars are up, and it’s
-          packed to the brim with feel-good moments that will make you
-          smile."
-        text2="Robbie Hart is New Jersey’s number one wedding singer and the life of the party. That is until his own fiancee strands him at the altar. Bitter and broken, Robbie begins to make every wedding as disastrous as his own until a warm-hearted waitress named Julia intervenes. Only trouble is, Julia’s about to be-you guessed it-married! Can Robbie pull off the performance of the decade and win the girl of his dreams?"
-      />
+      <div id="show-description">
+        <TwoTextCards
+          title="The Wedding Singer"
+          text1="Based on the Hollywood movie starring Adam Sandler and Drew
+            Barrymore, comes a hilarious musical comedy that celebrates all
+            the fun of the ’80s. Yes, hair is big, collars are up, and it’s
+            packed to the brim with feel-good moments that will make you
+            smile."
+          text2="Robbie Hart is New Jersey’s number one wedding singer and the life of the party. That is until his own fiancee strands him at the altar. Bitter and broken, Robbie begins to make every wedding as disastrous as his own until a warm-hearted waitress named Julia intervenes. Only trouble is, Julia’s about to be-you guessed it-married! Can Robbie pull off the performance of the decade and win the girl of his dreams?"
+        />
+      </div>
       <ShowGallery src={ShowImages} />
     </>
   );

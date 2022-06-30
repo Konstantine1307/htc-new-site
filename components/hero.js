@@ -50,7 +50,7 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, backgroundI
             {paragraph2}
           </p>
           <Link href={`${linkToPage}`}>
-            <a href={`${linkToPage}`}>
+            <a>
               <ButtonCard buttonCard={button} />
             </a>
           </Link>

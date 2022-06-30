@@ -35,7 +35,7 @@ function Productions() {
             buttonCard="Find out more"
           />
           <CardUp
-            backImage='url("/TMOAS.webp")'
+            backImage='url("/TMOASshowpage.webp")'
             titleCard="tell me on a sunday"
             paragraph="June 2021"
             anchor="/tellMeOnASunday"
