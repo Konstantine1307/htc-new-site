@@ -1,5 +1,7 @@
+import Layout from "../components/layout";
+import GoBackButton from "../components/utilities/goBackButton";
+import H2Heading from "../components/utilities/h2Heading"
 
-import H2Heading from "./utilities/h2Heading"
 
 
 const Awards = () => {
@@ -147,17 +149,19 @@ const Awards = () => {
 
   return (
     <>
-      <section className="section-global container py-4 md:mt-0" id="awards">     
-         <H2Heading 
-          h2heading="Awards"
-         />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start text-base text-center">
-            {awards_data.map((e, i) => (
-              <div className="w-90 md:w-full mt-4 text-start" key={i}>
-                <AwardsCard data={e} />
-              </div>
-            ))}
-          </div>
+    
+      <div className="container pt-3  flex justify-end">
+        <GoBackButton />
+      </div>
+      <section className="section-global container py-4 md:mt-0" id="awards">
+        <H2Heading h2heading="Awards" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start text-base text-center">
+          {awards_data.map((e, i) => (
+            <div className="w-90 md:w-full mt-4 text-start" key={i}>
+              <AwardsCard data={e} />
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );
@@ -202,7 +206,13 @@ const AwardsCard = ({ data }) => {
   );
 };
 
-
+Awards.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  );
+};
 
 
 export default Awards;

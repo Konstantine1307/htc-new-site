@@ -1,5 +1,5 @@
 
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +27,10 @@ function Navigation() {
               </Nav.Link>
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="p-2 rounded-full "/>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="p-2 rounded-full "
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
               <Link href="/">
@@ -46,6 +49,22 @@ function Navigation() {
                   About
                 </Nav.Link>
               </Link>
+              <NavDropdown
+                title="About Us"
+                id="collasible-nav-dropdown"
+                className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+              >
+                <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                <NavDropdown.Item href="#thegroup">The Group</NavDropdown.Item>
+                <NavDropdown.Item href="/awards">Awards</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#mission">
+                  Mission Statement
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#child-policy">
+                  Child Policy
+                </NavDropdown.Item>
+              </NavDropdown>
               <Link href="/productions">
                 <Nav.Link
                   href="/productions"

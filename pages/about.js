@@ -4,7 +4,7 @@ import GoBackButton from "../components/utilities/goBackButton";
 import CardUp from "../components/customcards/cardUp";
 import CardDown from "../components/customcards/cardDown";
 import TheGroup from "../components/theGroup"
-import Awards from "../components/awards";
+import Awards from "./awards";
 import MissionStatementSection from "../components/missionStatementSection";
 import AboutMembers from "/public/About-htc-members.webp"
 
