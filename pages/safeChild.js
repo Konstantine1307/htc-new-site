@@ -2,7 +2,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import { Accordion, AccordionButton } from "react-bootstrap";
-import TheGroupMembers from "/About-htc-members.webp";
+import TheGroupMembers from "/public/About-htc-members.webp";
 
 function Overlay() {
   return (
