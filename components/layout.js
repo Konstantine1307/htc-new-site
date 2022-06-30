@@ -2,7 +2,7 @@ import Head from "next/head";
 import Navigation from "./navigation";
 import ScrollToTop from "./utilities/ScrollToTop";
 import Footer from "./footer";
-import ContactBanner from "./contactBanner";
+import ContactBanner from "../pages/contactBanner";
 
 function Layout({ children }) {
   return (

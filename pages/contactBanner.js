@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonCard from "./utilities/buttonCard";
+import ButtonCard from "../components/utilities/buttonCard";
 
 // Contact banner above footer
 
@@ -13,9 +13,10 @@ const ContactBanner = () => {
         We are an all inclusive group and we would love to have you on board.
       </p>
       <Link href="/contact">
-        <a href="/contact">
+       <a>
           <ButtonCard buttonCard="Get in touch" />
-        </a>
+      </a>
+    
       </Link>
     </div>
   );
