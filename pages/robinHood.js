@@ -1,10 +1,8 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import "@splidejs/react-splide/css";
 import RHshowpage from "/public/RHshowpage.webp";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import GoToProductions from "../components/utilities/goToProductionButton";
-import TwoTextCards from "../components/utilities/TwoTextCards";
+import TwoTextCards from "../components/twoTextCards";
 import { Gallery } from "react-photoswipe-gallery";
 import GalleryImgCard from "../components/galleryImgCard";
 

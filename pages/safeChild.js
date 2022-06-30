@@ -2,7 +2,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import { Accordion, AccordionButton } from "react-bootstrap";
-import mission9to5 from "/public/9to5mission.jpeg";
+import TheGroupMembers from "/About-htc-members.webp";
 
 function Overlay() {
   return (
@@ -32,7 +32,7 @@ function SafeChild() {
         subtitle="CHILD PROTECTION POLICY"
         paragraph="2021-2022"
         backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
-        imageSrc={mission9to5}
+        imageSrc={TheGroupMembers}
         button="Policy Statements"
         linkToPage="#policy-statement"
       />
