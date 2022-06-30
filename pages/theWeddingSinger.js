@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import Hero from "../components/hero";
 import TWSshowpage from "/public/TWSshowpage.webp";
 import GoToProductions from "../components/utilities/goToProductionButton";
-import TwoTextCards from "../components/TwoTextCards";
+import TwoTextCards from "../components/twoTextCards";
 import { Gallery } from "react-photoswipe-gallery";
 import GalleryImgCard from "../components/galleryImgCard";
 

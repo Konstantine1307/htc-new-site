@@ -4,7 +4,7 @@ import tiobe from "/public/TIOBEhomepage.webp";
 import GoToProductions from "../components/utilities/goToProductionButton";
 import CardDown from "../components/customcards/cardDown";
 import CardUp from "../components/customcards/cardUp";
-import TwoTextCards from "../components/TwoTextCards";
+import TwoTextCards from "../components/twoTextCards";
 
 function TiobePlay() {
   return (
