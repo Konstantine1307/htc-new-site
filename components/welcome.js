@@ -5,7 +5,7 @@ import Chairman from "/public/welcome-htc-chairman.webp"
 
 const Welcome = () => {
   return (
-    <section className="section-global container pt-6" id="chairman-message">
+    <section className="section-global container pt-6 md:pt-3" id="chairman-message">
       <H2Heading h2heading="Welcome" />
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16 items-center mt-24 md:mt-20 px-3 ">
         <div className="col-span-2 text-lg text-justify font-light text-white">

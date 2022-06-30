@@ -1,7 +1,8 @@
 import Layout from "../components/layout";
-import GoBackButton from "../components/utilities/goBackButton";
+import Hero from "../components/hero";
+import BackToTheGroup from "../components/utilities/backToTheGroupButton";
 import H2Heading from "../components/utilities/h2Heading"
-
+import TheGroupMembers from "/public/About-htc-members.webp";
 
 
 const Awards = () => {
@@ -149,9 +150,17 @@ const Awards = () => {
 
   return (
     <>
-    
+      <Hero
+        title="HELSTON THEATRE COMPANY"
+        subtitle="CHILD PROTECTION POLICY"
+        paragraph="2021-2022"
+        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
+        imageSrc={TheGroupMembers}
+        button="Policy Statements"
+        linkToPage="#policy-statement"
+      />
       <div className="container pt-3  flex justify-end">
-        <GoBackButton />
+        <BackToTheGroup />
       </div>
       <section className="section-global container py-4 md:mt-0" id="awards">
         <H2Heading h2heading="Awards" />

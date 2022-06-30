@@ -1,12 +1,28 @@
+import Layout from '../components/layout';
 import Image from 'next/image'
 import Link from 'next/link';
-import H2Heading from './utilities/h2Heading';
-import TextCard from './utilities/textCard';
+import Hero from '../components/hero';
+import BackToTheGroup from '../components/utilities/backToTheGroupButton';
+import H2Heading from '../components/utilities/h2Heading';
+import TextCard from '../components/utilities/textCard';
+import TheGroupMembers from "/public/About-htc-members.webp";
 import rehearsals from "/public/rehearsals.jpeg";
 
 function MissionStatementSection() {
   return (
     <>
+      <Hero
+        title="HELSTON THEATRE COMPANY"
+        subtitle="CHILD PROTECTION POLICY"
+        paragraph="2021-2022"
+        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
+        imageSrc={TheGroupMembers}
+        button="Policy Statements"
+        linkToPage="#policy-statement"
+      />
+      <div className="container pt-3  flex justify-end">
+        <BackToTheGroup />
+      </div>
       <section className="section-global container" id="mission">
         <H2Heading h2heading="Mission Statement" />
 
@@ -26,9 +42,7 @@ function MissionStatementSection() {
 
         <div className="columns-1 px-2 md:px-40">
           <div>
-            <p className="text-2xl mt-5">
-              To achieve our aim we:
-            </p>
+            <p className="text-2xl mt-5">To achieve our aim we:</p>
 
             <ul className="mt-5 text-lg">
               <li className="mb-3 text-justify">
@@ -67,7 +81,6 @@ function MissionStatementSection() {
           </div>
         </div>
       </section>
-      
 
       <section className="" id="mission">
         <div
@@ -85,5 +98,10 @@ function MissionStatementSection() {
     </>
   );
 }
+
+
+MissionStatementSection.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 
 export default MissionStatementSection;

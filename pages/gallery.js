@@ -48,11 +48,11 @@ function MyGallery() {
         linkToPage="#gallery"
       />
 
-      <div className="section-global bg-neutral-50" id="gallery">  
+      <div className="section-global bg-white" id="gallery">  
           <div className="container -mt-12 flex justify-end">
             <GoBackButton />
           </div>
-          <div className="section-global container bg-neutral-50" id="gallery">
+          <div className="section-global container white" id="gallery">
            <H2Heading 
            h2heading = "Gallery"
            />

@@ -3,9 +3,9 @@ import Hero from "../components/hero";
 import GoBackButton from "../components/utilities/goBackButton";
 import CardUp from "../components/customcards/cardUp";
 import CardDown from "../components/customcards/cardDown";
-import TheGroup from "../components/theGroup"
+import TheGroup from "./theGroup"
 import Awards from "./awards";
-import MissionStatementSection from "../components/missionStatementSection";
+import MissionStatementSection from "./statements";
 import AboutMembers from "/public/About-htc-members.webp"
 
 

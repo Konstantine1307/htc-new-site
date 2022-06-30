@@ -1,5 +1,5 @@
-import TextCard from "./utilities/textCard";
-import H2Heading from "./utilities/h2Heading";
+import TextCard from "../components/utilities/textCard";
+import H2Heading from "../components/utilities/h2Heading";
 import Image from "next/image";
 import MyFair from "/public/theGroup-MyFairLady.webp";
 import JamaicaInn from "/public/theGroup-JamaicaInn.webp";

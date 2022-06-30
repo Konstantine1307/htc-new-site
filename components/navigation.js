@@ -36,39 +36,30 @@ function Navigation() {
               <Link href="/">
                 <Nav.Link
                   href="/"
-                  className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
                 >
                   Home
                 </Nav.Link>
-              </Link>
-              <Link href="/about">
-                <Nav.Link
-                  href="/about"
-                  className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
-                >
-                  About
-                </Nav.Link>
-              </Link>
+              </Link>             
               <NavDropdown
                 title="About Us"
                 id="collasible-nav-dropdown"
-                className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
-              >
-                <NavDropdown.Item href="/about">About</NavDropdown.Item>
-                <NavDropdown.Item href="#thegroup">The Group</NavDropdown.Item>
+                className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+              >           
+                <NavDropdown.Item href="/about">The Group</NavDropdown.Item>
                 <NavDropdown.Item href="/awards">Awards</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#mission">
+                <NavDropdown.Item href="/statements">
                   Mission Statement
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#child-policy">
+                <NavDropdown.Item href="/childPolicy">
                   Child Policy
                 </NavDropdown.Item>
               </NavDropdown>
               <Link href="/productions">
                 <Nav.Link
                   href="/productions"
-                  className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
                 >
                   Productions
                 </Nav.Link>
@@ -76,7 +67,7 @@ function Navigation() {
               <Link href="/gallery">
                 <Nav.Link
                   href="/gallery"
-                  className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
                 >
                   Gallery
                 </Nav.Link>
@@ -84,7 +75,7 @@ function Navigation() {
               <Link href="/contact">
                 <Nav.Link
                   href="/contact"
-                  className="font-mono tracking-wider px-3 font-bold text-zinc-200 hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
                 >
                   Contact
                 </Nav.Link>

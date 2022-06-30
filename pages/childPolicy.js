@@ -1,27 +1,11 @@
-import Link from "next/link";
+
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import { Accordion, AccordionButton } from "react-bootstrap";
 import TheGroupMembers from "/public/About-htc-members.webp";
+import BackToTheGroup from "../components/utilities/backToTheGroupButton";
+import H2Heading from "../components/utilities/h2Heading";
 
-function Overlay() {
-  return (
-    <div className="overlay absolute top-0 left-0 md:left0 bottom-0 right-0 md:right-0 bg-center bg-cover bg-white opacity-70"></div>
-  );
-}
-
-function GoBackButton() {
-  return (
-      <p className="text-lg p-1 rounded-l-lg text-white">
-        <Link href="/about">
-          <a>
-            <i className="fa-solid fa-arrow-left-long" aria-hidden="true"></i>
-            Back to The Group
-          </a>
-        </Link>
-      </p>
-  );
-}
 
 
 function SafeChild() {
@@ -29,19 +13,25 @@ function SafeChild() {
     <>
       <Hero
         title="HELSTON THEATRE COMPANY"
-        subtitle="CHILD PROTECTION POLICY"
+        subtitle="CHILD PROTECTION"
         paragraph="2021-2022"
         backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
         imageSrc={TheGroupMembers}
         button="Policy Statements"
         linkToPage="#policy-statement"
       />
-      <div className="container pt-3 flex justify-end">
-        <GoBackButton />
+      <div className="container py-3 flex justify-end">
+        <BackToTheGroup />
       </div>
-      <div className="container bg-neutral-50 text-black py-3 pb-5">
+      <div className="py-3">
+        <H2Heading h2heading="Child Protection Policy" />
+      </div>
+      <div className="container bg-white text-black pt-6 pb-5 mb-2 rounded-2xl">
         <div className="p-4">
-          <h4 className="text-base md:text-xl font-semibold text-center pb-3" id="policy-statement">
+          <h4
+            className="text-base md:text-xl font-semibold text-center pb-3"
+            id="policy-statement"
+          >
             HELSTON THEATRE COMPANY CHILD PROTECTION POLICY 2021-2022
           </h4>
           <p className="pb-3">

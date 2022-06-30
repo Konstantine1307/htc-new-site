@@ -108,3 +108,12 @@ a {
 }
 
 
+.dropdown-toggle {
+  color: white!important;
+}
+
+.dropdown-menu {
+  --bs-dropdown-bg: #0D101D;
+  --bs-dropdown-divider-bg: white;
+  --bs-dropdown-link-color: white;
+}
