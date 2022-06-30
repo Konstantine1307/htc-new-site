@@ -18,7 +18,7 @@ module.exports = {
       },
       animation: {
         'bounce-slow': 'bounce 1s infinite', 
-        fadeIn: 'fadeIn 2s ease-in forwards',
+        fadeIn: 'fadeIn 1s ease-in forwards',
       },
       keyframes: {
         fadeIn: {

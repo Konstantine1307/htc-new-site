@@ -98,13 +98,16 @@ function RobinHood() {
       <div className="container pt-3  flex justify-end">
         <GoToProductions />
       </div>
-      <TwoTextCards
-        title="Robin Hood"
-        text1="The annual family pantomime returns to Helston this January! Our hero Robin is king of the forest, stealing from the rich to help the poor. But the Sheriff is hot on his heels and Robin can only escape from his clutches so many times! "
-        text2="Expect capers, high jinx, songs and magic to delight children and adults of all ages."
-      />
-      <ShowGallery />
-    </>
+      <div id="show-description">
+        <TwoTextCards
+          title="Robin Hood"
+          text1="The annual family pantomime returns to Helston this January! Our hero Robin is king of the forest, stealing from the rich to help the poor. But the Sheriff is hot on his heels and Robin can only escape from his clutches so many times! "
+          text2="Expect capers, high jinx, songs and magic to delight children and adults of all ages."
+        />
+        </div>
+        <ShowGallery />
+       </>
+     
   );
 }
 

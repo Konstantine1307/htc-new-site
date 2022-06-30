@@ -100,15 +100,17 @@ function TMOASMusical() {
       <div className="container pt-3 flex justify-end">
         <GoToProductions />
       </div>
-      <TwoTextCards
-        title="Tell Me On A Sunday"
-        text1="Written in 1979, Tell Me on a Sunday is the story tells of a girl, Emma, from Muswell Hill who travels to the US in search of
-        love.Her romantic misadventures begin in New York City and lead
-        her to Hollywood before returning to Manhattan. The story is told
-        through a song cycle with no spoken dialogue."
-        text2="The show includes many well-known numbers including: Take That Look Off Your Face, The Last Man In My Life, Come Back with The
-         Same Look In Your Eyes, Tell Me On A Sunday, Unexpected Song."
-      />
+      <div id="show-description">
+        <TwoTextCards
+          title="Tell Me On A Sunday"
+          text1="Written in 1979, Tell Me on a Sunday is the story tells of a girl, Emma, from Muswell Hill who travels to the US in search of
+          love.Her romantic misadventures begin in New York City and lead
+          her to Hollywood before returning to Manhattan. The story is told
+          through a song cycle with no spoken dialogue."
+          text2="The show includes many well-known numbers including: Take That Look Off Your Face, The Last Man In My Life, Come Back with The
+           Same Look In Your Eyes, Tell Me On A Sunday, Unexpected Song."
+        />
+      </div>
       <ShowGallery src={ShowImages} />
     </>
   );
