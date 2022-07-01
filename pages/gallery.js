@@ -71,7 +71,7 @@ function MyGallery() {
                 </div>
                 <div className="mx-auto pt-12">
                   <details className="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg pt-6 rounded-lg shadow-none">
-                      <summary class="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
+                      <summary className="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
                 <ToggleButton />
               </summary>
                 <div className="pt-16"

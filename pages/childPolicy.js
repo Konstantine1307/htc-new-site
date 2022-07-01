@@ -123,14 +123,14 @@ function SafeChild() {
             each AGM.{" "}
           </p>
         </div>
-        <div class="mx-auto">
+        <div className="mx-auto">
           <details
-            class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg shadow-none" 
+            className="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg shadow-none" 
           >
-            <summary class="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
+            <summary className="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
               <ToggleButton />
             </summary>
-            <div class="pt-12">
+            <div className="pt-12">
               <p className="pb-3 font-bold">Responsibilities of the Society</p>
               <p className="pb-3">
                 At the outset of any production involving children the society
