@@ -6,7 +6,6 @@ import CardDown from "../components/customcards/cardDown";
 import CardUp from "../components/customcards/cardUp";
 import Welcome from "../components/welcome";
 
-import ToggleButton from "../components/utilities/readMoreLessButton";
 
 function Index() {
   return (
