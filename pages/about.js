@@ -18,7 +18,6 @@ function About() {
         subtitle="believes that accessible live theatre enriches the community."
         imageSrc={AboutMembers}
         alt="Helston Theatre Company 10th Anniversary party"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
         button="Discover The Group"
         linkToPage="#thegroup"
       />

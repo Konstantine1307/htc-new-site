@@ -14,8 +14,7 @@ function TiobePlay() {
         subtitle="Presents"
         paragraph='"A handbag packed with laughter"'
         imageSrc={tiobe}
-        alt="The Wedding Singer musical at the Epworth Centre April 2022"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
+        alt="The Importance Of Being Ernest - August 2022"
         button="Get your tickets"
         linkToPage="#show-description"
       />

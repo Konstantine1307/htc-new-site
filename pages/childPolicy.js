@@ -14,7 +14,6 @@ function SafeChild() {
         title="HELSTON THEATRE COMPANY"
         subtitle="CHILD PROTECTION"
         paragraph="2021-2022"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
         imageSrc={TheGroupMembers}
         button="Policy Statements"
         linkToPage="#policy-statement"

@@ -11,18 +11,6 @@ import rehearsals from "/public/rehearsals.jpeg";
 function MissionStatementSection() {
   return (
     <>
-      {/* <Hero
-        title="HELSTON THEATRE COMPANY"
-        subtitle="CHILD PROTECTION POLICY"
-        paragraph="2021-2022"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
-        imageSrc={TheGroupMembers}
-        button="Policy Statements"
-        linkToPage="#policy-statement"
-      />
-      <div className="container pt-3  flex justify-end">
-        <BackToTheGroup />
-      </div> */}
       <section className="section-global container" id="mission">
         <H2Heading h2heading="Mission Statement" />
 

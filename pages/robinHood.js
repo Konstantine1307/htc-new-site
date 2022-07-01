@@ -90,7 +90,6 @@ function RobinHood() {
         paragraph="Epworth Centre - January 2022"
         imageSrc={RHshowpage}
         alt="Robin Hood Pantomime at the Epworth Centre January 2022"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
         button="Enter the show"
         linkToPage="#show-description"
       />

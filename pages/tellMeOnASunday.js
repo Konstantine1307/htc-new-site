@@ -92,7 +92,6 @@ function TMOASMusical() {
         paragraph="Minack Theatre - June 2021"
         imageSrc={TMOASshowpage}
         alt="Tell Me On A Sunday musical at the Minack Theatre June 2021"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
         button="Enter the show"
         linkToPage="#show-description"
       />

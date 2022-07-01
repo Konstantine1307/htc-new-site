@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonCard from "./utilities/buttonCard";
 
-function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, backgroundImage, linkToPage, button}) {
+function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, linkToPage, button}) {
   const backgroundHero = {
-        backgroundImage: `${backgroundImage}`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        minHeight: "700px",
-        paddingBottom:"50px"   
-  }
+    backgroundImage: 'url("/paul-green-bg-hero.webp")',
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    minHeight: "700px",
+    paddingBottom: "50px",
+  };
   return (
     <section
       className="flex items-center justify-center  "
@@ -33,7 +33,7 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, backgroundI
             </a>
           </Link>
         </div>
-        <div className=" motion-safe:animate-fadeIn duration-1000 max-w-sm md:max-w-screen-lg ">
+        <div className=" max-w-sm md:max-w-screen-lg ">
           <Image src={imageSrc} alt={alt} className="object-fit md:px-6" />
         </div>
         <div className="hidden md:block max-w-md md:pr-4 text-center motion-safe:animate-fadeIn duration-500">
