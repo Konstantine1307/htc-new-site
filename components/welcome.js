@@ -7,8 +7,8 @@ const Welcome = () => {
   return (
     <section className="section-global container pt-6 md:pt-3" id="chairman-message">
       <H2Heading h2heading="Welcome" />
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16 items-center mt-24 md:mt-20 px-3 ">
-        <div className="col-span-2 text-lg text-justify font-light text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-24 md:mt-20 px-3">
+        <div className="text-lg text-justify font-light text-white">
           <p className="pb-3">
             I first became involved in non-professional theatre in Helston in
             1977 when I joined Meneage Arts Players for their pantomime Mother
@@ -35,12 +35,13 @@ const Welcome = () => {
           <p className="italic text-end">Paul Blaber</p>
           <p className="italic text-end">Chairman</p>
         </div>
-        <div className="flex mx-auto w-60 md:w-80 py-5 ">
+        <div className="flex-auto w-75 mx-auto md:w-full">
           <Image
             src={Chairman}
             className="rounded-lg brightness-110 drop-shadow-2xl"
             alt="Paul Blaber - Helston Theatre Company Chairman Person"
-          />
+            layout="responsive"
+                 />
         </div>
       </div>
     </section>

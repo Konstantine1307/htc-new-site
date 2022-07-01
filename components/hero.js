@@ -33,7 +33,7 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, linkToPage,
             </a>
           </Link>
         </div>
-        <div className=" max-w-sm md:max-w-screen-lg ">
+        <div className=" motion-safe:animate-fadeIn duration-1000 max-w-sm md:max-w-screen-lg ">
           <Image src={imageSrc} alt={alt} className="object-fit md:px-6" />
         </div>
         <div className="hidden md:block max-w-md md:pr-4 text-center motion-safe:animate-fadeIn duration-500">

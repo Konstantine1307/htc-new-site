@@ -7,7 +7,6 @@ import CardUp from "../components/customcards/cardUp";
 import Welcome from "../components/welcome";
 
 
-
 function Index() {
   return (
     <>
