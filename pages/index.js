@@ -7,8 +7,6 @@ import CardUp from "../components/customcards/cardUp";
 import Welcome from "../components/welcome";
 
 
-
-
 function Index() {
   return (
     <>
@@ -19,7 +17,7 @@ function Index() {
         of our community. It's where the community is."
         imageSrc={tiobe}
         alt="The Importance of Being Earnest poster for summer 2022 play"
-        backgroundImage='url("/paul-green-bg-theatre-unsplash.webp")'
+        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
         button="Next Production"
         linkToPage="/tiobe"
       />
