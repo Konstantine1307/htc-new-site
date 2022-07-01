@@ -6,8 +6,8 @@ import { Gallery } from "react-photoswipe-gallery";
 import GalleryImgCard from "../components/galleryImgCard";
 import data from "../components/GalleryData/galleryData";
 import data2 from "../components/GalleryData/galleryDataPlus";
-import { Accordion, AccordionButton } from "react-bootstrap";
 import H2Heading from "../components/utilities/h2Heading";
+import ToggleButton from "../components/utilities/readMoreLessButton";
 
 
 function GoBackButton() {
@@ -49,51 +49,48 @@ function MyGallery() {
       />
 
       <div className="section-global bg-white" id="gallery">  
-          <div className="container -mt-12 flex justify-end">
+          <div className="container md:-mt-12 flex justify-end">
             <GoBackButton />
           </div>
-          <div className="section-global container white" id="gallery">
+          <div className="section-global container md:-mt-12" id="gallery">
            <H2Heading 
            h2heading = "Gallery"
            />
-            <Gallery withCaption>
-              <div
+            <div className="pt-12">
+              <Gallery withCaption>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                    columnGap: "15px",
+                    rowGap: "15px",
+                  }}
+                >
+                  {imgCards}
+                </div>
+                <div className="mx-auto pt-12">
+                  <details className="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg pt-6 rounded-lg shadow-none">
+                      <summary class="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
+                <ToggleButton />
+              </summary>
+                <div className="pt-16"
                 style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  flexWrap: "wrap",
-                  columnGap: "15px",
-                  rowGap: "15px",
-                }}
-              >
-                {imgCards}
-              </div>
-              {/* Load More Photos section */}
-
-              <Accordion className="pt-5" flush>
-                <Accordion.Item eventKey="0">
-                  <div className=" w-25 mx-auto">
-                    <AccordionButton className=" bg-prima text-black  text-xl text-center pt-3 founded-full">
-                      Show More
-                    </AccordionButton>
-                  </div>
-
-                  <Accordion.Body>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        columnGap: "15px",
-                        rowGap: "15px",
-                      }}
-                    >
-                      {imgCards2}
-                    </div>
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
-            </Gallery>
+                          display: "flex",
+                          justifyContent: "center",
+                          flexWrap: "wrap",
+                          columnGap: "15px",
+                          rowGap: "15px",
+                        }}
+                  >
+                    {imgCards2}
+                </div>
+              
+              
+                </details>
+                </div>
+              </Gallery>
+            </div>
           </div>
         </div>
   

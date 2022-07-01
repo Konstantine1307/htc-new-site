@@ -44,7 +44,7 @@ const TheGroup = () => {
             <i className="fa-solid fa-heart text-prima pr-2"></i> Sally Blabler
           </span>
           <span>
-            <i className="fa-solid fa-heart text-prima pr-2"></i> Elaine Downey
+            <i className="fa-solid fa-heart text-prima pr-2"></i> Elaine Downie
           </span>
           <span>
             <i className="fa-solid fa-heart text-prima pr-2"></i> Jonathan Geer

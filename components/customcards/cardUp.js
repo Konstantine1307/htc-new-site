@@ -28,7 +28,6 @@ function CardUp(props) {
           <div className="relative flex flex-col mb-8 rounded-lg">
             <Link href={props.anchor} target={props.target} rel="noreferrer">
               <a
-                href={props.anchor}
                 target={props.target}
                 rel="noreferrer"
                 className="hover:text-pink-100 duration-300"

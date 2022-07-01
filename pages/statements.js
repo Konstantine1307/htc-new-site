@@ -1,17 +1,17 @@
-import Layout from '../components/layout';
+// import Layout from '../components/layout';
 import Image from 'next/image'
 import Link from 'next/link';
-import Hero from '../components/hero';
-import BackToTheGroup from '../components/utilities/backToTheGroupButton';
+// import Hero from '../components/hero';
+// import BackToTheGroup from '../components/utilities/backToTheGroupButton';
 import H2Heading from '../components/utilities/h2Heading';
 import TextCard from '../components/utilities/textCard';
-import TheGroupMembers from "/public/About-htc-members.webp";
+// import TheGroupMembers from "/public/About-htc-members.webp";
 import rehearsals from "/public/rehearsals.jpeg";
 
 function MissionStatementSection() {
   return (
     <>
-      <Hero
+      {/* <Hero
         title="HELSTON THEATRE COMPANY"
         subtitle="CHILD PROTECTION POLICY"
         paragraph="2021-2022"
@@ -22,7 +22,7 @@ function MissionStatementSection() {
       />
       <div className="container pt-3  flex justify-end">
         <BackToTheGroup />
-      </div>
+      </div> */}
       <section className="section-global container" id="mission">
         <H2Heading h2heading="Mission Statement" />
 
@@ -88,7 +88,7 @@ function MissionStatementSection() {
           id="child-policy"
         >
           <H2Heading h2heading="Child Protection Policy" />
-          <Link href="/safeChild">
+          <Link href="/childPolicy">
             <button className="py-3 px-5 bg-zinc-50 shadow-2xl shadow-gray-900 hover:shadow-prima text-black text-xl font-bold rounded-2xl  ">
               Read here
             </button>
@@ -100,8 +100,8 @@ function MissionStatementSection() {
 }
 
 
-MissionStatementSection.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// MissionStatementSection.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default MissionStatementSection;

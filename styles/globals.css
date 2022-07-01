@@ -6,7 +6,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
+
 
 a {
   color: inherit;
@@ -116,4 +118,14 @@ a {
   --bs-dropdown-bg: #0D101D;
   --bs-dropdown-divider-bg: white;
   --bs-dropdown-link-color: white;
+}
+
+/* Accordion arrow removal for staments and gallery sections */
+
+details > summary {
+list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }

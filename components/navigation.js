@@ -40,22 +40,32 @@ function Navigation() {
                 >
                   Home
                 </Nav.Link>
-              </Link>             
-              <NavDropdown
+              </Link>{" "}
+              <Link href="/about">
+                <Nav.Link
+                  href="/about"
+                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                >
+                  About
+                </Nav.Link>
+              </Link>
+              {/* <NavDropdown
                 title="About Us"
                 id="collasible-nav-dropdown"
                 className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
-              >           
-                <NavDropdown.Item href="/about">The Group</NavDropdown.Item>
-                <NavDropdown.Item href="/awards">Awards</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/statements">
-                  Mission Statement
+              >
+                <NavDropdown.Item href="/About/about">
+                  The Group
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/childPolicy">
+                <NavDropdown.Item href="#awards">Awards</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/About/about/#mission">
+                  Mission Statement/Child Policy
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/About/about/#policy-statement">
                   Child Policy
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <Link href="/productions">
                 <Nav.Link
                   href="/productions"

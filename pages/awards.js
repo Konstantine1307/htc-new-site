@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
-import Hero from "../components/hero";
-import BackToTheGroup from "../components/utilities/backToTheGroupButton";
+// import Layout from "../components/layout";
+// import Hero from "../components/hero";
+// import BackToTheGroup from "../components/utilities/backToTheGroupButton";
 import H2Heading from "../components/utilities/h2Heading"
-import TheGroupMembers from "/public/About-htc-members.webp";
+// import TheGroupMembers from "/public/About-htc-members.webp";
 
 
 const Awards = () => {
@@ -11,10 +11,10 @@ const Awards = () => {
       year: "2019",
       association: "Cornwall Drama Association",
       include: [
-        "Best Set in a Musical for Whistle Down the Wind",
-        "Technical Achievement",
-        "Best Acress in a Musical - Caya Murphy for Whislte Down the Wind",
-        "Best Actor in a Musical - Jonathan Tucke for My Fair Lady",
+        "Best Set in a Musical for Whistle Down The Wind",
+        "Technical Achievement for Whistle Down The Wind",
+        "Best Actress in a Musical - Caya Murphy for Whislte Down The Wind",
+        "Best Actor in a Musical - Jonathan Tucker for My Fair Lady",
         "Best Pantomime for Dick Whittington ",
       ],
       special: "Special Awards:",
@@ -24,14 +24,12 @@ const Awards = () => {
       ],
       secAssociation: "",
       noda_include: [],
-      website: "https://www.tgcottage.com",
     },
     {
       year: "2018",
       association: "Cornwall Drama Association",
       include: [
         "Best Musical for Avenue Q",
-        "Technical Achievement",
         "Best Direct - Paul Blaber for Avenue Q",
         "Fine Ensemble Playing for Avenue Q",
         "Best Actor in a Musical - Trenton Spear & Russel Hicken for Avenue Q",
@@ -64,8 +62,8 @@ const Awards = () => {
         "Jarrad Goldsworthy & Trenton Spear for their pairing in Rent",
         "Anita Smuda for Best Choreography for Cinderella",
       ],
-      secAssociation: "",
-      noda_include: [],
+      secAssociation: "National Operatic and Dramatic Association",
+      noda_include: ["District 1 Award for Rent"],
     },
     {
       year: "2016",
@@ -75,16 +73,9 @@ const Awards = () => {
         "Best Actor - Nathan Hooper for Our House",
         "Outstanding Musical Performance for Our House",
         "Fine Ensemble Playing for Our House",
-        "Best Pantomime for Cinderella ",
-        "Technical Achievement for Cinderella",
-        "Best set for Cinderella",
       ],
-      special: "Special Awards:",
-      sp_include: [
-        "John England & Rob Mitchell for the Ugly Sisters in Cinderella",
-        "Jarrad Goldsworthy & Trenton Spear for their pairing in Rent",
-        "Anita Smuda for Best Choreography for Cinderella",
-      ],
+      special: "",
+      sp_include: [],
       secAssociation: "",
       noda_include: [],
       dark: true,
@@ -106,18 +97,15 @@ const Awards = () => {
         "The Goose costume and the Mother Goose Zombies",
         "Outstanding romantic duo for Sunset Boulevard",
       ],
-      secAssociation: "Old England 1 Act Play",
+      secAssociation: "National Operatic and Dramatic Association",
       noda_include: [
-        "Best Actress for Suzanne Goodwin for Festival Nightmare",
-        "Best Director for Nikki Roberts for Festival Nightmare",
+        "District 1 Award for Sunset Boulevard",
       ],
     },
     {
       year: "2014",
-      association: "Cornwall Drama Association",
+      association: "",
       include: [
-        "Best Actress - Suzanne Goodwin for Festival Nightmare",
-        "Best Director - Nikki Roberts for Festival Nightmare",
       ],
       special: "Special Awards:",
       sp_include: [
@@ -127,7 +115,6 @@ const Awards = () => {
       secAssociation: "All England 1 Act Play",
       noda_include: [
         "Best Actor - Tim Gerrish for Alternative Accommodation",
-        "Best Director for Nikki Roberts for Festival Nightmare",
       ],
       dark: true,
     },
@@ -144,13 +131,12 @@ const Awards = () => {
       sp_include: [],
       secAssociation: "All England 1 Act Play",
       noda_include: ["Best Actor - Mike Cox for Between Mouthfulls"],
-      
     },
   ];
 
   return (
     <>
-      <Hero
+      {/* <Hero
         title="HELSTON THEATRE COMPANY"
         subtitle="CHILD PROTECTION POLICY"
         paragraph="2021-2022"
@@ -161,7 +147,7 @@ const Awards = () => {
       />
       <div className="container pt-3  flex justify-end">
         <BackToTheGroup />
-      </div>
+      </div> */}
       <section className="section-global container py-4 md:mt-0" id="awards">
         <H2Heading h2heading="Awards" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start text-base text-center">
@@ -187,7 +173,7 @@ const AwardsCard = ({ data }) => {
         </p>
         {data.include.map((e, i) => (
           <div key={i}>
-            <i className="fa-solid fa-trophy pe-2 text-prima"></i>
+            <i className="fa-solid fa-trophy pr-2 text-prima"></i>
             {` ${e}`}
           </div>
         ))}
@@ -195,7 +181,7 @@ const AwardsCard = ({ data }) => {
         {data.sp_include &&
           data.sp_include.map((e, i) => (
             <div key={i} >
-              <i className="fa-solid fa-award pe-2 "></i>
+              <i className="fa-solid fa-award pr-2 "></i>
               {` ${e}`}
             </div>
           ))}
@@ -206,7 +192,7 @@ const AwardsCard = ({ data }) => {
         {data.noda_include &&
           data.noda_include.map((e, i) => (
             <div key={i} >
-              <i className="fa-solid fa-trophy pe-2 color-primary"></i>
+              <i className="fa-solid fa-trophy pr-2 text-prima"></i>
               {` ${e}`}
             </div>
           ))}
@@ -215,13 +201,13 @@ const AwardsCard = ({ data }) => {
   );
 };
 
-Awards.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      {page}
-    </Layout>
-  );
-};
+// Awards.getLayout = function getLayout(page) {
+//   return (
+//     <Layout>
+//       {page}
+//     </Layout>
+//   );
+// };
 
 
 export default Awards;

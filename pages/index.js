@@ -6,6 +6,8 @@ import CardDown from "../components/customcards/cardDown";
 import CardUp from "../components/customcards/cardUp";
 import Welcome from "../components/welcome";
 
+import ToggleButton from "../components/utilities/readMoreLessButton";
+
 function Index() {
   return (
     <>
@@ -20,7 +22,6 @@ function Index() {
         button="Next Production"
         linkToPage="/tiobe"
       />
-
       <div className="container mx-auto px-4 pt-4 md:mt-12">
         <div className="flex flex-wrap">
           <CardDown
@@ -41,7 +42,7 @@ function Index() {
             backImage='url("/card-background1.webp")'
             titleCard="52+ Awards"
             paragraph="Share our success"
-            anchor="#awards"
+            anchor="/about/#awards"
             buttonCard="Find out more"
           />
         </div>
