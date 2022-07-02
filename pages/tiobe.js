@@ -23,9 +23,7 @@ function TiobePlay() {
         <GoToProductions />
       </div>
       <div className="py-10">
-        <h2 className="h2-brand">
-          Choose Your Venue
-        </h2>
+        <h2 className="h2-brand">Choose Your Venue</h2>
       </div>
       <div className="py-16 px-3 -mt-12" id="show-description">
         <div className="container mx-auto px-4">
@@ -46,7 +44,7 @@ function TiobePlay() {
               paragraph="Helston"
               paragraph2="Aug 07"
               paragraph3="7.00pm"
-              anchor="https://www.penleeparktheatre.com/events/"
+              anchor="https://uk.patronbase.com/_CornishRivieraBoxOffice/Productions/HTC4/Performances"
               target="_blank"
               buttonCard="Find out more"
             />
