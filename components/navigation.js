@@ -7,7 +7,7 @@ import Link from "next/link";
 function Navigation() {
     return (
       <Navbar
-        className="py-0.5 px-5 md:px-40 bg-brand-gradient"
+        className="pb-0.5 px-5 md:px-40 bg-brand-gradient"
         collapseOnSelect
         expand="lg"
         variant="dark"
@@ -20,8 +20,8 @@ function Navigation() {
                 <Image
                   src="/htclogo1.svg"
                   alt="HTC Logo"
-                  width={60}
-                  height={60}
+                  width={80}
+                  height={80}
                   className="rounded-full"
                 />
               </Nav.Link>
@@ -32,44 +32,45 @@ function Navigation() {
             className="p-2 rounded-full "
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">
+            <Nav className="ml-auto min-h-96 space-y-10 md:space-y-0">
               <Link href="/">
                 <Nav.Link
                   href="/"
-                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="nav-link-brand"
                 >
                   Home
                 </Nav.Link>
               </Link>{" "}
-              <Link href="/about">
+              {/* <Link href="/about">
                 <Nav.Link
                   href="/about"
                   className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
                 >
                   About
                 </Nav.Link>
-              </Link>
-              {/* <NavDropdown
+              </Link> */}
+              <NavDropdown
                 title="About Us"
                 id="collasible-nav-dropdown"
-                className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                className="nav-link-brand"
               >
-                <NavDropdown.Item href="/About/about">
+                <NavDropdown.Item href="/about">
                   The Group
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#awards">Awards</NavDropdown.Item>
+                <NavDropdown.Item href="/about/#awards">
+                  Awards</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/About/about/#mission">
-                  Mission Statement/Child Policy
+                <NavDropdown.Item href="/about/#mission">
+                  Mission Statement
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/About/about/#policy-statement">
+                <NavDropdown.Item href="/about/#child-policy">
                   Child Policy
                 </NavDropdown.Item>
-              </NavDropdown> */}
+              </NavDropdown>
               <Link href="/productions">
                 <Nav.Link
                   href="/productions"
-                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="nav-link-brand"
                 >
                   Productions
                 </Nav.Link>
@@ -77,7 +78,7 @@ function Navigation() {
               <Link href="/gallery">
                 <Nav.Link
                   href="/gallery"
-                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="nav-link-brand"
                 >
                   Gallery
                 </Nav.Link>
@@ -85,7 +86,7 @@ function Navigation() {
               <Link href="/contact">
                 <Nav.Link
                   href="/contact"
-                  className="font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg"
+                  className="nav-link-brand"
                 >
                   Contact
                 </Nav.Link>
