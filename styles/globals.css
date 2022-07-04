@@ -56,6 +56,10 @@ a {
   .h2-brand {
     @apply text-5xl md:text-7xl mb-5 text-center text-prima shadow-2xl shadow-gray-700;
   }
+
+  .nav-link-brand {
+    @apply font-mono tracking-wider px-3 font-bold text-white hover:bg-gray-700 active:text-pink-500 focus:bg-gray-800 focus:text-zinc-900 rounded-lg
+  }
 }
 
 
@@ -118,6 +122,7 @@ a {
   --bs-dropdown-bg: #0D101D;
   --bs-dropdown-divider-bg: white;
   --bs-dropdown-link-color: white;
+  margin-bottom: 20px;
 }
 
 /* Accordion arrow removal for staments and gallery sections */
