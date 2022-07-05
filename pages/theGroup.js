@@ -36,7 +36,7 @@ const TheGroup = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-4 mt-10 md:mt-20 px-2 space-y-4">
+      <div className="grid grid-cols-1 gap-4 mt-10 md:mt-20 px-2 space-y-4" id="awards">
         <p className="text-lg text-center font-light text-white">
           Helston Theatre Company has awarded Life Membership to the following members for their individual contribution to the group:
         </p>

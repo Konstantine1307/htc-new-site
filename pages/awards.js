@@ -104,7 +104,7 @@ const Awards = () => {
     },
     {
       year: "2014",
-      association: "",
+      association: "Cornwall Drama Association",
       include: [
       ],
       special: "Special Awards:",
@@ -136,23 +136,11 @@ const Awards = () => {
 
   return (
     <>
-      {/* <Hero
-        title="HELSTON THEATRE COMPANY"
-        subtitle="CHILD PROTECTION POLICY"
-        paragraph="2021-2022"
-        backgroundImage='url("https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80")'
-        imageSrc={TheGroupMembers}
-        button="Policy Statements"
-        linkToPage="#policy-statement"
-      />
-      <div className="container pt-3  flex justify-end">
-        <BackToTheGroup />
-      </div> */}
-      <section className="section-global container py-4 md:mt-0" id="awards">
+      <section className="section-global container py-8">
         <H2Heading h2heading="Awards" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start text-base text-center">
+        <div className="items-start text-base text-center pt-10">
           {awards_data.map((e, i) => (
-            <div className="w-90 md:w-full mt-4 text-start" key={i}>
+            <div className="w-full md:w-3/4 mx-auto mt-4 text-start" key={i}>
               <AwardsCard data={e} />
             </div>
           ))}
@@ -166,7 +154,7 @@ const Awards = () => {
 const AwardsCard = ({ data }) => {
   return (
     <>
-      <div className={"p-3 rounded-2xl hover:scale-105 duration-500  " + (data.dark ? "bg-slate-800" : "bg-slate-800 text-white")}>
+      <div className={"p-3 rounded-2xl hover:scale-105 duration-500 " + (data.dark ? "bg-slate-800" : "bg-slate-800 text-white")}>
         <h5 className="text-3xl text-center color-primary shadow-2xl shadow-indigo-300">{data.year}</h5>
         <p className="text-xl pt-4 pb-2 font-mono text-center underline underline-offset-4 font-bold ">
           {data.association}
