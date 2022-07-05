@@ -40,8 +40,8 @@ const Welcome = () => {
             src={Chairman}
             className="rounded-lg brightness-110 drop-shadow-2xl"
             alt="Paul Blaber - Helston Theatre Company Chairman Person"
-            width={323}
-            height={490}
+            width="323"
+            height="490"
             layout="intrinsic"
                  />
         </div>
