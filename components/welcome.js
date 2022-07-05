@@ -1,7 +1,7 @@
 
 import H2Heading from "./utilities/h2Heading";
 import Image from "next/image";
-import Chairman from "/public/welcome-htc-chairman.webp"
+import Chairman from "/public/welcome-chairman.webp"
 
 const Welcome = () => {
   return (
@@ -35,12 +35,13 @@ const Welcome = () => {
           <p className="italic text-end">Paul Blaber</p>
           <p className="italic text-end">Chairman</p>
         </div>
-        <div className="flex-auto w-75 mx-auto md:w-full">
+        <div className=" w-70 md:w-full flex justify-center ">
           <Image
             src={Chairman}
             className="rounded-lg brightness-110 drop-shadow-2xl"
             alt="Paul Blaber - Helston Theatre Company Chairman Person"
-            layout="responsive"
+            width={333}
+            height={500}
                  />
         </div>
       </div>

@@ -89,6 +89,8 @@ function RobinHood() {
         title="Robin Hood"
         paragraph="Epworth Centre - January 2022"
         imageSrc={RHshowpage}
+        width={500}
+        height={705}
         alt="Robin Hood Pantomime at the Epworth Centre January 2022"
         button="Enter the show"
         linkToPage="#show-description"

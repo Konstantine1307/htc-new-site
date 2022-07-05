@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonCard from "./utilities/buttonCard";
 
-function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, linkToPage, button}) {
+function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, height, linkToPage, button,}) {
   const backgroundHero = {
     backgroundImage: 'url("/paul-green-bg-hero.webp")',
     backgroundPosition: "center",
@@ -33,10 +33,10 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, linkToPage,
             </a>
           </Link>
         </div>
-        <div className=" motion-safe:animate-fadeIn duration-1000 max-w-sm md:max-w-screen-lg ">
-          <Image src={imageSrc} alt={alt} className="object-fit md:px-6" />
+        <div className=" max-w-sm md:max-w-2xl ">
+          <Image src={imageSrc} alt={alt} width={width} height={height} className="md:px-6" />
         </div>
-        <div className="hidden md:block max-w-md md:pr-4 text-center motion-safe:animate-fadeIn duration-500">
+        <div className="hidden md:block max-w-md md:pr-4 text-center md:motion-safe:animate-fadeIn duration-500">
           <h1 className="font-heading md:text-3xl lg:text-4xl tracking-wider  text-white pb-3">
             {title}
           </h1>

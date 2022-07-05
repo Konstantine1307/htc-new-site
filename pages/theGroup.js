@@ -12,6 +12,8 @@ const TheGroup = () => {
         <div className="col-span-1 md:col-span-2 flex-auto w-90 mx-auto  md:w-full mt-10 ">
           <Image
             src={MyFair}
+            width={1653}
+            height={1067}
             className="rounded-lg"
             alt="My Fair Lady at the Epworth Hall"
           />
@@ -27,6 +29,8 @@ const TheGroup = () => {
         <div className="flex-auto w-90 mx-auto md:w-full ">
           <Image
             src={JamaicaInn}
+            width={1417}
+            height={844}
             className="rounded-lg"
             alt="Jamaica Inn at Trebah Gardens"
           />

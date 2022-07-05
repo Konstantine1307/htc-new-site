@@ -88,6 +88,8 @@ function TheWeddingSinger() {
         title="The Wedding Singer"
         paragraph="Epworth Centre - April 2022"
         imageSrc={TWSshowpage}
+        width={1688}
+        height={1160}
         alt="The Wedding Singer musical at the Epworth Centre April 2022"
         button="Enter the show"
         linkToPage="#show-description"

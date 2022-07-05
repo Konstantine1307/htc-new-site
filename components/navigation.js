@@ -14,16 +14,16 @@ function Navigation() {
         sticky="top"
       >
         <Container>
-          <Navbar.Brand>
+          <Navbar.Brand className="w-16 md:w-28">
             <Link href="/">
-              <Nav.Link href="/" className=" md:pl-10">
-                <Image
-                  src="/htclogo1.svg"
-                  alt="HTC Logo"
-                  width={80}
-                  height={80}
-                  className="rounded-full"
-                />
+              <Nav.Link href="/" className=" md:pl-10">            
+                  <Image
+                    src="/htclogo1.svg"
+                    alt="HTC Logo"
+                    width={400}
+                    height={403}
+                    className="rounded-full"
+                  />         
               </Nav.Link>
             </Link>
           </Navbar.Brand>

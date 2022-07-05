@@ -9,13 +9,15 @@ function Footer() {
           <Link
             href="/"       
           >
-            <Image
-              src="/htclogo1.svg"
-              width={70}
-              height={70}
-              alt="Helston Theatre Company Logo"
-              className="rounded-full"
-            />
+            <div className="w-16">
+              <Image
+                src="/htclogo1.svg"
+                width={400}
+                height={403}
+                alt="Helston Theatre Company Logo"
+                className="rounded-full"
+              />
+            </div>
           </Link>
           <span className="ml-3  text-white">
             &copy; 2022 Helston Theatre Company

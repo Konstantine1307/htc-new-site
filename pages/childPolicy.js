@@ -15,6 +15,8 @@ function SafeChild() {
         subtitle="CHILD PROTECTION"
         paragraph="2021-2022"
         imageSrc={TheGroupMembers}
+        width={681}
+        height={681}
         button="Policy Statements"
         linkToPage="#policy-statement"
       />

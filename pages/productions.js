@@ -27,21 +27,21 @@ function Productions() {
       <div className="container mx-auto px-4 md:mt-12">
         <div className="flex flex-wrap">
           <CardDown
-            backImage='url("/TWSshowpage.webp")'
+            backImage='url("/TWSshowpage-small.webp")'
             titleCard="the wedding singer"
             paragraph="April 2022"
             anchor="/theWeddingSinger"
             buttonCard="Find out more"
           />
           <CardUp
-            backImage='url("/TMOASshowpage.webp")'
+            backImage='url("/TMOASshowpage-small.webp")'
             titleCard="tell me on a sunday"
             paragraph="June 2021"
             anchor="/tellMeOnASunday"
             buttonCard="Find out more"
           />
           <CardDown
-            backImage='url("/RHshowpage.webp")'
+            backImage='url("/RHshowpage-small.webp")'
             titleCard="robin hood 
             panto "
             paragraph="January 2022"

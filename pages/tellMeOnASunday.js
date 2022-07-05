@@ -91,6 +91,8 @@ function TMOASMusical() {
         title="Tell Me On A Sunday"
         paragraph="Minack Theatre - June 2021"
         imageSrc={TMOASshowpage}
+        width={2048}
+        height={1370}
         alt="Tell Me On A Sunday musical at the Minack Theatre June 2021"
         button="Enter the show"
         linkToPage="#show-description"

@@ -22,6 +22,8 @@ function MissionStatementSection() {
           <div className="flex-auto md:w-75 mx-auto md:w-full pt-12 ">
             <Image
               src={rehearsals}
+              width={960}
+              height={960}
               className="rounded-lg"
               alt="Jamaica Inn at Trebah Gardens"
             />
