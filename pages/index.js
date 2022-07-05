@@ -16,8 +16,9 @@ function Index() {
         we aim to share amazing shows with the support and participation
         of our community. It's where the community is."
         imageSrc={tiobe}
-        width={488}
-        height={690}
+        width={390}
+        height={552}
+        layout="intrinsic"
         alt="The Importance of Being Earnest poster for summer 2022 play"
         button="Next Production"
         linkToPage="/tiobe"

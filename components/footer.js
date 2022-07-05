@@ -6,9 +6,7 @@ function Footer() {
     <div className="bg-brand-gradient">
       <footer className="flex flex-wrap justify-around items-center py-3 ">
         <div className="flex items-center justify-between my-2">
-          <Link
-            href="/"       
-          >
+          <Link href="/">
             <div className="w-16">
               <Image
                 src="/htclogo1.svg"
@@ -31,7 +29,13 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/assets/twitter.svg" width={36} height={36} alt="Twitter" />
+              <Image
+                src="/assets/twitter.svg"
+                width={36}
+                height={36}
+                layout="intrinsic"
+                alt="Twitter"
+              />
             </a>
           </li>
           <li className="ml-3">
@@ -44,6 +48,7 @@ function Footer() {
                 src="/assets/instagram.svg"
                 width={36}
                 height={36}
+                layout="intrinsic"
                 alt="Instagram"
               />
             </a>
@@ -58,6 +63,7 @@ function Footer() {
                 src="/assets/facebook.svg"
                 width={36}
                 height={36}
+                layout="intrinsic"
                 alt="Facebook"
               />
             </a>
@@ -68,7 +74,13 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/assets/youtube.svg" width={36} height={36} alt="YouTube" />
+              <Image
+                src="/assets/youtube.svg"
+                width={36}
+                height={36}
+                layout="intrinsic"
+                alt="YouTube"
+              />
             </a>
           </li>
         </ul>
