@@ -3,6 +3,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -49,7 +50,7 @@ export default function Example() {
                 <div className="hidden sm:block sm:ml-6 pt-4 md:pl-20">
                   <div className="flex space-x-4 ">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
@@ -64,7 +65,7 @@ export default function Example() {
                         
                         {item.name}
                         
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -97,7 +98,7 @@ export default function Example() {
 
                       <Menu.Item>
                         {({ active }) => (
-                          <a
+                          <Link
                             href="/about/#mission"
                             className={classNames(
                               active ? "bg-gray-700" : "",
@@ -105,12 +106,12 @@ export default function Example() {
                             )}
                           >
                             Mission Statement
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
+                          <Link
                             href="/about/#child-policy"
                             className={classNames(
                               active ? "bg-gray-700" : "",
@@ -118,7 +119,7 @@ export default function Example() {
                             )}
                           >
                             Child Policy
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                     </Menu.Items>
@@ -133,7 +134,7 @@ export default function Example() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
+                  as="Link"
                   href={item.href}
                   className={classNames(
                     item.current
@@ -171,7 +172,7 @@ export default function Example() {
                   <Menu.Items className="origin-top-right absolute left-10 mt-2 w-48 rounded-md shadow-lg py-1 bg-brandBlue ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
+                        <Link
                           href="/about/#mission"
                           className={classNames(
                             active ? "bg-gray-700" : "",
@@ -179,12 +180,12 @@ export default function Example() {
                           )}
                         >
                           Mission Statement
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
+                        <Link
                           href="/about/#child-policy"
                           className={classNames(
                             active ? "bg-gray-700" : "",
@@ -192,7 +193,7 @@ export default function Example() {
                           )}
                         >
                           Child Policy
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                   </Menu.Items>
