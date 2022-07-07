@@ -52,7 +52,8 @@ export default function Example() {
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
-                        href={item.href}
+                        href={item.href}>
+                        <a
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -64,7 +65,7 @@ export default function Example() {
                       >
                         
                         {item.name}
-                        
+                        </a>
                       </Link>
                     ))}
                   </div>
@@ -99,26 +100,30 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            href="/about/#mission"
+                            href="/about/#mission">
+                              <a
                             className={classNames(
                               active ? "bg-gray-700" : "",
                               "block px-4 py-2 text-sm text-white"
                             )}
                           >
                             Mission Statement
+                            </a>
                           </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            href="/about/#child-policy"
+                            href="/about/#child-policy">
+                              <a
                             className={classNames(
                               active ? "bg-gray-700" : "",
                               "block px-4 py-2 text-sm text-white"
                             )}
                           >
                             Child Policy
+                            </a>
                           </Link>
                         )}
                       </Menu.Item>
@@ -173,26 +178,30 @@ export default function Example() {
                     <Menu.Item>
                       {({ active }) => (
                         <Link
-                          href="/about/#mission"
+                          href="/about/#mission">
+                          <a
                           className={classNames(
                             active ? "bg-gray-700" : "",
                             "block px-4 py-2 text-base text-white"
                           )}
                         >
                           Mission Statement
+                          </a>
                         </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
                         <Link
-                          href="/about/#child-policy"
+                          href="/about/#child-policy">
+                            <a
                           className={classNames(
                             active ? "bg-gray-700" : "",
                             "block px-4 py-2 text-base text-white"
                           )}
                         >
                           Child Policy
+                          </a>
                         </Link>
                       )}
                     </Menu.Item>
