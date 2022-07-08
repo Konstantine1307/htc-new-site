@@ -2,10 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import ButtonCard from "./utilities/buttonCard";
+import BackImage from "../public/paul-green-bg-hero.webp"
 
 function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, height, layout, linkToPage, button,}) {
   const backgroundHero = {
-    backgroundImage: 'url("/paul-green-bg-hero.webp")',
+    backgroundImage: {BackImage},
     backgroundPosition: "center",
     backgroundSize: "cover",
     minHeight: "700px",
