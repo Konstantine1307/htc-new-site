@@ -33,9 +33,9 @@ function CardUp(props) {
                 className="hover:text-pink-100 duration-300"
               >
                 <div className="py-4">
-                  <h6 className="text-2xl lg:text-3xl font-semibold uppercase pb-3">
+                  <p className="text-2xl lg:text-3xl font-semibold uppercase pb-3">
                     {props.titleCard}
-                  </h6>
+                  </p>
                   <p className="font-light text-base lg:text-xl pb-3">
                     {props.paragraph}
                     <br />
