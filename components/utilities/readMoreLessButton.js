@@ -8,6 +8,6 @@ export default function ToggleButton() {
   }
 
   return(
-    <p onClick={changeToggle}>{isReadMore ? 'Show More' : 'Show Less'}</p>
+    <p onClick={changeToggle} className="cursor-pointer">{isReadMore ? 'Show More' : 'Show Less'}</p>
   )
 }

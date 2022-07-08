@@ -80,7 +80,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-50 mx-auto py-2 mt-2 bg-zinc-50 shadow-2xl shadow-gray-900 hover:shadow-green-700  text-black font-bold rounded-2xl "
+        className={`${formStyles.button} ${"btn-brand"}`}
       >
         Submit
       </button>

@@ -19,6 +19,7 @@ function About() {
         imageSrc={AboutMembers}
         width={681}
         height={681}
+        layout="intrinsic"
         alt="Helston Theatre Company 10th Anniversary party"
         button="Discover The Group"
         linkToPage="#thegroup"

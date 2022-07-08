@@ -72,14 +72,14 @@ function MissionStatementSection() {
         </div>
       </section>
 
-      <section className="" id="mission">
+      <section className="section-global container" id="mission">
         <div
-          className="container py-12 columns-1 text-center"
+          className=" py-12 columns-1 text-center"
           id="child-policy"
         >
           <H2Heading h2heading="Child Protection Policy" />
           <Link href="/childPolicy">
-            <button className="py-3 px-5 bg-zinc-50 shadow-2xl shadow-gray-900 hover:shadow-prima text-black text-xl font-bold rounded-2xl  ">
+            <button className="btn-brand  ">
               Read here
             </button>
           </Link>

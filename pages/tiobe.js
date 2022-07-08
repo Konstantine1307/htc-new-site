@@ -22,11 +22,11 @@ function TiobePlay() {
       <div className="container pt-3 flex justify-end">
         <GoToProductions />
       </div>
-      <div className="py-10">
-        <h2 className="h2-brand">Choose Your Venue</h2>
-      </div>
+     
+        <h2 className="h2-brand my-16">Choose Your Venue</h2>
+    
       <div className="py-16 px-3 -mt-12" id="show-description">
-        <div className="container mx-auto px-4">
+        <div className="container">
           <div className="flex flex-wrap">
             <CardDown
               backImage='url("/TIOBE-bedruthantheatre-newquay.webp")'
@@ -61,13 +61,14 @@ function TiobePlay() {
           </div>
         </div>
       </div>
-
-      <TwoTextCards
-        title="The Importance Of Being Ernest"
-        text1="Duplicity and deception, hilarity and handbags! 
-        Laugh out loud as Helston Theatre Company bluff and bluster their way through Oscar Wilde’s satirical masterpiece, his last and most loved comedy, The Importance of Being Earnest.Often described as a trivial comedy for serious people, the story of two bachelors, John 'Jack' Worthing and Algernon 'Algy' Moncrieff, who create alter egos named Ernest to escape their tiresome lives. They attempt to win the hearts of two women who, conveniently, claim to only love men called Ernest."
-        text2="It soon becomes quite a struggle to keep up with their own stories and they quickly are entangled in a tale of disguise, deception and misadventure! The quite bonkers plot of this play mocks Victorian sensibilities with some of the best loved and frankly ludicrous characters to be found on the modern stage.The Importance of Being Earnest is one of those iconic plays by Oscar Wilde that engages themes such as marriage, class, social expectations, and the lifestyles of the English upper class and is still, quite rightly, enduringly popular today."
-      />
+      <h2 className="h2-brand my-16">The Importance Of Being Ernest</h2>
+      <div className=" pb-12">
+        <TwoTextCards
+          text1="Duplicity and deception, hilarity and handbags!
+          Laugh out loud as Helston Theatre Company bluff and bluster their way through Oscar Wilde’s satirical masterpiece, his last and most loved comedy, The Importance of Being Earnest.Often described as a trivial comedy for serious people, the story of two bachelors, John 'Jack' Worthing and Algernon 'Algy' Moncrieff, who create alter egos named Ernest to escape their tiresome lives. They attempt to win the hearts of two women who, conveniently, claim to only love men called Ernest."
+          text2="It soon becomes quite a struggle to keep up with their own stories and they quickly are entangled in a tale of disguise, deception and misadventure! The quite bonkers plot of this play mocks Victorian sensibilities with some of the best loved and frankly ludicrous characters to be found on the modern stage.The Importance of Being Earnest is one of those iconic plays by Oscar Wilde that engages themes such as marriage, class, social expectations, and the lifestyles of the English upper class and is still, quite rightly, enduringly popular today."
+        />
+      </div>
     </>
   );
 }

@@ -39,7 +39,7 @@ a {
     }
 
     .section-global {
-     padding: 5rem 0.75rem;
+     padding: 5rem 0;
     }
 }
 
@@ -54,7 +54,7 @@ a {
     @apply py-3 px-5 bg-zinc-50 shadow-2xl shadow-gray-900 hover:shadow-prima hover:scale-105 text-black font-bold rounded-2xl duration-300; 
   }
   .h2-brand {
-    @apply text-5xl md:text-7xl mb-5 text-center text-prima shadow-2xl shadow-gray-700;
+    @apply text-5xl md:text-7xl text-center text-prima shadow-2xl shadow-gray-700;
   }
 
   .nav-link-brand {

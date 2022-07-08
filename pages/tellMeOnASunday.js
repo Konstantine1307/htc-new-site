@@ -101,9 +101,10 @@ function TMOASMusical() {
       <div className="container pt-3 flex justify-end">
         <GoToProductions />
       </div>
-      <div id="show-description">
+      <h2 className="h2-brand my-16">Tell Me On A Sunday</h2>
+      <div className="pb-12" id="show-description">
         <TwoTextCards
-          title="Tell Me On A Sunday"
+        
           text1="Written in 1979, Tell Me on a Sunday is the story tells of a girl, Emma, from Muswell Hill who travels to the US in search of
           love.Her romantic misadventures begin in New York City and lead
           her to Hollywood before returning to Manhattan. The story is told
@@ -112,7 +113,11 @@ function TMOASMusical() {
            Same Look In Your Eyes, Tell Me On A Sunday, Unexpected Song."
         />
       </div>
-      <ShowGallery src={ShowImages} />
+     
+        <div className="container">
+          <ShowGallery src={ShowImages} />
+        </div>
+   
     </>
   );
 }

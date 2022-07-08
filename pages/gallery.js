@@ -42,57 +42,58 @@ function MyGallery() {
         we aim to share amazing shows with the support and participation
         of our community. It's where the community is."
         imageSrc={tiobe}
+        width={488}
+        height={690}
+        layout="intrinsic"
         alt="The Importance of Being Earnest poster for summer 2022 play"
         button="Explore our gallery"
         linkToPage="#gallery"
       />
 
-      <div className="section-global bg-white" id="gallery">  
-          <div className="container md:-mt-12 flex justify-end">
-            <GoBackButton />
-          </div>
-          <div className="section-global container md:-mt-12" id="gallery">
-           <H2Heading 
-           h2heading = "Gallery"
-           />
-            <div className="pt-12">
-              <Gallery withCaption>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    columnGap: "15px",
-                    rowGap: "15px",
-                  }}
-                >
-                  {imgCards}
-                </div>
-                <div className="mx-auto pt-12">
-                  <details className="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg pt-6 rounded-lg shadow-none">
-                      <summary className="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
-                <ToggleButton />
-              </summary>
-                <div className="pt-16"
+      <div className="bg-white px-12 flex justify-end">
+        <GoBackButton />
+      </div>
+
+      <div className="section-global bg-white" id="gallery">
+        <div className=" container md:-mt-12" id="gallery">
+          <H2Heading h2heading="Gallery" />
+          <div className="pt-12">
+            <Gallery withCaption>
+              <div
                 style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          flexWrap: "wrap",
-                          columnGap: "15px",
-                          rowGap: "15px",
-                        }}
+                  display: "flex",
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                  columnGap: "15px",
+                  rowGap: "15px",
+                }}
+              >
+                {imgCards}
+              </div>
+              <div className="mx-auto pt-12">
+                <details className="open:bg-white   pt-6 rounded-lg shadow-none">
+                  <summary className="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
+                    <ToggleButton />
+                  </summary>
+                  <div
+                    className="pt-16"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                      columnGap: "15px",
+                      rowGap: "15px",
+                    }}
                   >
                     {imgCards2}
-                </div>
-              
-              
+                  </div>
                 </details>
-                </div>
-              </Gallery>
-            </div>
+              </div>
+            </Gallery>
           </div>
         </div>
-  
+      </div>
+
       <div className="border-t-2 p-2"></div>
     </>
   );

@@ -146,10 +146,10 @@ const ProductionsData = () => {
 
   return (
     <>
-      <section className="section-global">
-        <H2Heading 
-         h2heading = "Past Productions"
-        />
+      <section className="section-global container">
+        <h2 className="h2-brand mb-20">
+         Past Productions
+        </h2>
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <ProductionCards data={projects_data} />

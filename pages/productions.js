@@ -18,6 +18,9 @@ function Productions() {
         button="More Info"
         linkToPage="/tiobe"
         imageSrc={tiobe}
+        width={488}
+        height={690}
+        layout="intrinsic"
       />
 
       <div className="container pt-3 flex justify-end">

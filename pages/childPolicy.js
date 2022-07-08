@@ -26,8 +26,8 @@ function SafeChild() {
       <div className="py-3">
         <H2Heading h2heading="Child Protection Policy" />
       </div>
-      <div className="container bg-white text-black pt-6 pb-5 mb-2 rounded-2xl">
-        <div className="p-4">
+      <div className="section-global container bg-white text-black pt-6 pb-5 rounded-t-2xl">
+        <div className="p-4 mb-5">
           <h4
             className="text-base md:text-xl font-semibold text-center pb-3"
             id="policy-statement"
@@ -125,9 +125,7 @@ function SafeChild() {
           </p>
         </div>
         <div className="mx-auto">
-          <details
-            className="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg shadow-none" 
-          >
+          <details className="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg shadow-none">
             <summary className="text-2xl text-prima font-bold text-center py-2 rounded bg-neutral-50 w-48 mx-auto">
               <ToggleButton />
             </summary>
@@ -501,7 +499,9 @@ function SafeChild() {
             </div>
           </details>
         </div>
+        <div className="border-t-2 p-2"></div>
       </div>
+      <div className="border-t-2 p-2"></div>
     </>
   );
 }

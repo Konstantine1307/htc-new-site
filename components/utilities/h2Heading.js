@@ -2,7 +2,7 @@
     function H2Heading (props) {
         return (
         
-        <h2 className="h2-brand">
+        <h2 className="h2-brand mb-8">
          {props.h2heading}
         </h2>
     

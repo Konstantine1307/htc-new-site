@@ -99,16 +99,17 @@ function RobinHood() {
       <div className="container pt-3  flex justify-end">
         <GoToProductions />
       </div>
-      <div id="show-description">
-        <TwoTextCards
-          title="Robin Hood"
+      <h2 className="h2-brand my-16">Robin Hood</h2>
+      <div className="pb-12" id="show-description">
+        <TwoTextCards  
           text1="The annual family pantomime returns to Helston this January! Our hero Robin is king of the forest, stealing from the rich to help the poor. But the Sheriff is hot on his heels and Robin can only escape from his clutches so many times! "
           text2="Expect capers, high jinx, songs and magic to delight children and adults of all ages."
         />
-        </div>
+      </div>
+      <div className="container">
         <ShowGallery />
-       </>
-     
+      </div>
+    </>
   );
 }
 

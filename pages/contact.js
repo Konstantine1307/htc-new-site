@@ -7,8 +7,8 @@ import ContactForm from "../components/contactSection/contact-form";
 const ContactSection = () => {
     return (
       <>
-        <section className="section-global bg-neutral-50 text-black">       
-          <div className="container">          
+        <section className="section-global container  bg-neutral-50 text-black">       
+                 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               
               <div className="">
@@ -29,7 +29,7 @@ const ContactSection = () => {
                 <ContactLinks />
               </div>
             </div>
-          </div>
+       
         </section>
       </>
     );
@@ -100,10 +100,13 @@ function Contact() {
         we aim to share amazing shows with the support and participation
         of our community. It's where the community is."
         imageSrc={tiobe}
-        button = "Stay in touch"
+        width={488}
+        height={690}
+        layout="intrinsic"
+        button="Stay in touch"
         linkToPage="#contact-page"
-      />  
-      <ContactSection />     
+      />
+      <ContactSection />
     </>
   );
 }
