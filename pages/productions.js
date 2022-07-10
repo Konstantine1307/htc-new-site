@@ -5,9 +5,7 @@ import PastProductions from "../components/pastProductions";
 import tiobe from "/public/TIOBEhomepage.webp";
 import CardUp from "../components/customcards/cardUp";
 import CardDown from "../components/customcards/cardDown";
-import ProductionCard from "../components/productionCard";
-import FacebookLink from "../components/facebookLink";
-import FacebookLinksDiv from "../components/facebookLinksDiv";
+
 
 
 
