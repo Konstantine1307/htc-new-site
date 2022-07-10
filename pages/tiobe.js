@@ -14,6 +14,9 @@ function TiobePlay() {
         subtitle="Presents"
         paragraph='"A handbag packed with laughter"'
         imageSrc={tiobe}
+        width={488}
+        height={690}
+        layout="intrinsic"
         alt="The Importance Of Being Ernest - August 2022"
         button="Get your tickets"
         linkToPage="#show-description"
@@ -22,9 +25,9 @@ function TiobePlay() {
       <div className="container pt-3 flex justify-end">
         <GoToProductions />
       </div>
-     
-        <h2 className="h2-brand my-16">Choose Your Venue</h2>
-    
+
+      <h2 className="h2-brand my-16">Choose Your Venue</h2>
+
       <div className="py-16 px-3 -mt-12" id="show-description">
         <div className="container">
           <div className="flex flex-wrap">

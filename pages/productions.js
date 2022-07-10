@@ -5,6 +5,9 @@ import PastProductions from "../components/pastProductions";
 import tiobe from "/public/TIOBEhomepage.webp";
 import CardUp from "../components/customcards/cardUp";
 import CardDown from "../components/customcards/cardDown";
+import ProductionCard from "../components/productionCard";
+import FacebookLink from "../components/facebookLink";
+import FacebookLinksDiv from "../components/facebookLinksDiv";
 
 
 
@@ -15,7 +18,7 @@ function Productions() {
         title="OUR NEXT PRODUCTION"
         paragraph="Duplicity and deception, hilarity and handbags!
         Laugh out loud as Helston Theatre Company bluff and bluster their way through Oscar Wilde’s last and most loved comedy, The Importance of Being Earnest."
-        button="More Info"
+        button="Discover the plot!"
         linkToPage="/tiobe"
         imageSrc={tiobe}
         width={488}
@@ -34,14 +37,14 @@ function Productions() {
             titleCard="the wedding singer"
             paragraph="April 2022"
             anchor="/theWeddingSinger"
-            buttonCard="Find out more"
+            buttonCard="Join the party!"
           />
           <CardUp
             backImage='url("/TMOASshowpage-small.webp")'
             titleCard="tell me on a sunday"
             paragraph="June 2021"
             anchor="/tellMeOnASunday"
-            buttonCard="Find out more"
+            buttonCard="What happened?"
           />
           <CardDown
             backImage='url("/RHshowpage-small.webp")'
@@ -49,10 +52,12 @@ function Productions() {
             panto "
             paragraph="January 2022"
             anchor="/robinHood"
-            buttonCard="Find out more"
+            buttonCard="Annual Panto"
           />
         </div>
       </div>
+      
+     
     </>
   );
 }
@@ -62,6 +67,7 @@ Productions.getLayout = function getLayout(page) {
     <Layout>
       {page}      
       <PastProductions /> 
+      
     </Layout>
   );
 };
