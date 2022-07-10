@@ -42,7 +42,7 @@ function Productions() {
             titleCard="tell me on a sunday"
             paragraph="June 2021"
             anchor="/tellMeOnASunday"
-            buttonCard="What happened?"
+            buttonCard="Live her journey"
           />
           <CardDown
             backImage='url("/RHshowpage-small.webp")'
