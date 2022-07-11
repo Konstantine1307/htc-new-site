@@ -1,6 +1,6 @@
 //Past productions
+import Link from "next/link";
 
-import H2Heading from "./utilities/h2Heading";
 
 const ProductionsData = () => {
   const projects_data = [
@@ -165,55 +165,65 @@ const ProductionsData = () => {
 const ProductionCards = ({ data }) => {
   return (
     <>
-      {data.map((e, i) => (
+      {data.map((props, i) => (
         <div className=" " key={i}>
           <div
             className="h-full rounded-md p-2 flex flex-col "
-            style={{ backgroundColor: `${e.color}da` }}
+            style={{ backgroundColor: `${props.color}da` }}
           >
             <div className="text-2xl mb-3 text-center  text-white">
-              {e.category}
+              {props.category}
             </div>
-            <a
-              href={e.link}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-4 font-semibold "
-            >
-              {e.text}
-            </a>
-            <a
-              href={e.link2}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-4 font-semibold"
-            >
-              {e.text2}
-            </a>
-            <a
-              href={e.link3}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-4 font-semibold"
-            >
-              {e.text3}
-            </a>
-            <a
-              href={e.link4}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-4 font-semibold"
-            >
-              {e.text4}
-            </a>
-            <a
-              href={e.link5}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-4 font-semibold"
-            >
-              {e.text5}
-            </a>
+            <Link href="#">
+              <a
+               href={props.link}
+                target="_blank"
+                rel="noreferrer"
+                className="underline mb-4 font-semibold "
+              >
+                {props.text}
+              </a>
+            </Link>
+            <Link href="#">
+              <a
+                href={props.link2}
+                target="_blank"
+                rel="noreferrer"
+                className="underline mb-4 font-semibold"
+              >
+                {props.text2}
+              </a>
+            </Link>
+            <Link href="#">
+              <a
+                href={props.link3}
+                target="_blank"
+                rel="noreferrer"
+                className="underline mb-4 font-semibold"
+              >
+                {props.text3}
+              </a>
+            </Link>
+            <Link href="#">
+              <a
+                href={props.link4}
+                target="_blank"
+                rel="noreferrer"
+                className="underline mb-4 font-semibold"
+              >
+                {props.text4}
+              </a>
+            </Link>
+            <Link href="#">
+              <a
+                href={props.link5}
+                target="_blank"
+                rel="noreferrer"
+                className="underline mb-4 font-semibold"
+              >
+                {props.text5}
+              </a>
+            </Link>
           </div>
         </div>
       ))}
