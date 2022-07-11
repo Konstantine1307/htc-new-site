@@ -22,7 +22,7 @@ const Welcome = () => {
             each year making us one of the busiest amateur theatre companies in
             Cornwall drawing members from Penzance to Truro. We pride ourselves
             on presenting the very best theatre and it is great to see us
-            receiving wider recognition of our work from The Cornwall Drama
+            receiving wider recognition of our work from the Cornwall Drama
             Association and National Operatic and Dramatic Association.
           </p>
           <p className="pb-4">

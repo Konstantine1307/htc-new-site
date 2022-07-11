@@ -20,7 +20,7 @@ const TheGroup = () => {
           />
         </div>
         <TextCard
-          text="We are a non-professional dramatics group in Helston, on the southern tip
+          text="We are a non-professional theatre company in Helston, on the southern tip
               of Cornwall. We have around 100 members, but put on productions
               that meet the standard of much larger companies in the area."
         />
