@@ -59,7 +59,11 @@ function MyGallery() {
           <H2Heading h2heading="Gallery" />
           <div className="pt-12">
             <h3 className="text-black text-2xl pb-12 text-center">Visit our albums for the 
-            <a href="/productions/#past-productions"> <span className="underline text-prima hover:text-3xl duration-150 ">Past Productions</span></a></h3>
+            <Link href="/productions/#past-productions"> 
+            <a>
+            <span className="underline text-prima hover:text-3xl duration-150 ">Past Productions</span>
+            </a>
+            </Link></h3>
             <Gallery withCaption>
               <div
                 style={{
