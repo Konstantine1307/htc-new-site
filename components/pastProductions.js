@@ -1,5 +1,5 @@
-//Past productions
-import Link from "next/link";
+
+
 
 
 const ProductionsData = () => {
@@ -8,7 +8,7 @@ const ProductionsData = () => {
       category: "2021",
       color: "#5737f5",
       text: "Tell Me On a Sunday",
-      link: "https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240090692742336",
+      link: 'url("https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240090692742336")',
       text2: "James and the Giant Peach",
       link2:
         "https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240080592743346",
@@ -146,11 +146,12 @@ const ProductionsData = () => {
 
   return (
     <>
-      <section className="section-global container">
+      <section className="section-global container" id="past-productions">
         <h2 className="h2-brand mb-20">
          Past Productions
         </h2>
         <div className="container">
+          <p className="text-2xl text-center text-white pb-6 shadow-xl">Visit our production photo albums</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <ProductionCards data={projects_data} />
           </div>
@@ -168,62 +169,56 @@ const ProductionCards = ({ data }) => {
       {data.map((props, i) => (
         <div className=" " key={i}>
           <div
-            className="h-full rounded-md p-2 flex flex-col "
+            className="group h-full rounded-md p-2 flex flex-col md:bg-gradient-to-b hover:from-pink-500 hover:to-cyan-500 md:hover:scale-105 md:hover:text-black duration-150 "
             style={{ backgroundColor: `${props.color}da` }}
           >
-            <div className="text-2xl mb-3 text-center  text-white">
+            <div className="text-3xl mb-6 text-center  text-white shadow-xl shadow-cyan-800 group-hover:text-black duration-150 ">
               {props.category}
             </div>
-            <Link href="#">
-              <a
-               href={props.link}
-                target="_blank"
-                rel="noreferrer"
-                className="underline mb-4 font-semibold "
-              >
-                {props.text}
-              </a>
-            </Link>
-            <Link href="#">
-              <a
-                href={props.link2}
-                target="_blank"
-                rel="noreferrer"
-                className="underline mb-4 font-semibold"
-              >
-                {props.text2}
-              </a>
-            </Link>
-            <Link href="#">
-              <a
-                href={props.link3}
-                target="_blank"
-                rel="noreferrer"
-                className="underline mb-4 font-semibold"
-              >
-                {props.text3}
-              </a>
-            </Link>
-            <Link href="#">
-              <a
-                href={props.link4}
-                target="_blank"
-                rel="noreferrer"
-                className="underline mb-4 font-semibold"
-              >
-                {props.text4}
-              </a>
-            </Link>
-            <Link href="#">
-              <a
-                href={props.link5}
-                target="_blank"
-                rel="noreferrer"
-                className="underline mb-4 font-semibold"
-              >
-                {props.text5}
-              </a>
-            </Link>
+            <a
+              href={props.link}
+              target="_blank"
+              rel="noreferrer"
+              className="underline mb-6 text-lg text-center"
+            >
+              {props.text}
+            </a>
+     
+            <a
+              href={props.link2}
+              target="_blank"
+              rel="noreferrer"
+              className="underline mb-6 font-semibold text-center"
+            >
+              {props.text2}
+            </a>
+          
+            <a
+              href={props.link3}
+              target="_blank"
+              rel="noreferrer"
+              className="underline mb-6 font-semibold text-center"
+            >
+              {props.text3}
+            </a>
+        
+            <a
+              href={props.link4}
+              target="_blank"
+              rel="noreferrer"
+              className="underline mb-6 font-semibold text-center"
+            >
+              {props.text4}
+            </a>
+         
+            <a
+              href={props.link5}
+              target="_blank"
+              rel="noreferrer"
+              className="underline mb-6 font-semibold text-center"
+            >
+              {props.text5}
+            </a>
           </div>
         </div>
       ))}

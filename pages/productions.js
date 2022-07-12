@@ -27,35 +27,60 @@ function Productions() {
       <div className="container pt-3 flex justify-end">
         <GoBackButton />
       </div>
+      <div className="container mx-auto px-4 md:mt-12 mb-32">
+        <h2 className="h2-brand mb-16">Future Productions</h2>
+        <div className="flex flex-wrap">
+          <CardDown
+            backImage='url("/JATBshowpage-small.webp")'
+            titleCard="Jack & The Beanstalk"
+            paragraph2="25 - 29 January 2023"
+            anchor="/jackAndTheBeanstalk"
+            buttonCard="Find out more"
+          />
+          <CardUp
+            backImage='url("/SToddshowpage.webp")'
+            titleCard="Sweeney Todd"
+            paragraph2="23 - 29 April 2023"
+            anchor="/sweeneyTodd"
+            buttonCard="Find out more"
+          />
+          <CardDown
+            backImage='url("/Evitashowpage.webp")'
+            titleCard="Evita"
+            paragraph2="September 2023"
+            anchor="/evita"
+            buttonCard="Find Out More"
+          />
+        </div>
+      </div>
 
       <div className="container mx-auto px-4 md:mt-12">
+        <h2 className="h2-brand mb-16">Recent Productions</h2>
         <div className="flex flex-wrap">
           <CardDown
             backImage='url("/TWSshowpage-small.webp")'
             titleCard="the wedding singer"
-            paragraph="April 2022"
+            paragraph2="April 2022"
             anchor="/theWeddingSinger"
             buttonCard="Join the party!"
           />
           <CardUp
             backImage='url("/TMOASshowpage-small.webp")'
             titleCard="tell me on a sunday"
-            paragraph="June 2021"
+            paragraph2="June 2021"
             anchor="/tellMeOnASunday"
-            buttonCard="Live her journey"
+            buttonCard="See the journey"
           />
           <CardDown
             backImage='url("/RHshowpage-small.webp")'
             titleCard="robin hood 
             panto "
-            paragraph="January 2022"
+            paragraph2="January 2022"
             anchor="/robinHood"
             buttonCard="Annual Panto"
           />
         </div>
       </div>
-      
-     
     </>
   );
 }

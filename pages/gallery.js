@@ -58,6 +58,8 @@ function MyGallery() {
         <div className=" container md:-mt-12" id="gallery">
           <H2Heading h2heading="Gallery" />
           <div className="pt-12">
+            <h3 className="text-black text-2xl pb-12 text-center">Visit our albums for the 
+            <a href="/productions/#past-productions"> <span className="underline text-prima hover:text-3xl duration-150 ">Past Productions</span></a></h3>
             <Gallery withCaption>
               <div
                 style={{

@@ -30,15 +30,15 @@ const Awards = () => {
       association: "Cornwall Drama Association",
       include: [
         "Best Musical for Avenue Q",
-        "Best Direct - Paul Blaber for Avenue Q",
+        "Best Director - Paul Blaber for Avenue Q",
         "Fine Ensemble Playing for Avenue Q",
         "Best Actor in a Musical - Trenton Spear & Russel Hicken for Avenue Q",
         "Best Actress in a Musical - Grace Wallen for Avenue Q",
       ],
       special: "Special Awards:",
       sp_include: [
-        "Gary Hunt for the Dame in Snow White and the Seven Dwarves",
-        "The Dwarves in Snow White and the Seven Dwarves",
+        "Gary Hunt for the Dame in Snow White and the Seven Dwarfes",
+        "The Dwarfes in Snow White and the Seven Dwarfes",
       ],
       secAssociation: "",
       noda_include: [],
@@ -84,7 +84,7 @@ const Awards = () => {
       year: "2015",
       association: "Cornwall Drama Association",
       include: [
-        "Best Director - Leslie Church for the The Hypochondriac",
+        "Best Director - Leslie Church for The Hypochondriac",
         "Best Costumes for Sunset Boulevard",
         "Best Supporting Performance - Gary Hunt for Sunset Boulevard",
         "Best Actress - Helen Hartshorne for Sunset Boulevard  ",

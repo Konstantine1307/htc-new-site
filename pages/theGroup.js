@@ -26,7 +26,7 @@ const TheGroup = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-10 md:mt-20 px-3">
-        <TextCard text="Most of our productions are staged in the Epworth Hall, but we do occasionally tour to other venues in the county. We are a member of both Cornwall Drama Association, and National Operative & Dramatic Association and have taken part in the All England One Act Play Festival. We are always looking for new members to join us so do get in touch via the Contact page." />
+        <TextCard text="Most of our productions are staged in the Epworth Hall, Helston, and we do tour to other venues in the county. We are a member of both Cornwall Drama Association, and National Operative & Dramatic Association and have taken part in the All England One Act Play Festival. We are always looking for new members to join us so do get in touch via the Contact page." />
         <div className="flex-auto w-90 mx-auto md:w-full ">
           <Image
             src={JamaicaInn}
