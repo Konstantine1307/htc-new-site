@@ -57,11 +57,11 @@ function MyGallery() {
       <div className="section-global bg-white" id="gallery">
         <div className=" container md:-mt-12" id="gallery">
           <H2Heading h2heading="Gallery" />
-          <div className="pt-12">
-            <h3 className="text-black text-2xl pb-12 text-center">Visit our albums for the 
+          <div className="pt-12 ">
+            <h3 className="text-black text-2xl pb-12 text-center">Visit our albums for  
             <Link href="/productions/#past-productions"> 
             <a>
-            <span className="underline text-prima hover:text-3xl duration-150 ">Past Productions</span>
+            <p className="underline text-prima hover:text-3xl duration-150 "> Past Productions</p>
             </a>
             </Link></h3>
             <Gallery withCaption>

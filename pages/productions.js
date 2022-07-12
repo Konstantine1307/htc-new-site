@@ -29,7 +29,7 @@ function Productions() {
       </div>
       <div className="container mx-auto px-4 md:mt-12 mb-32">
         <h2 className="h2-brand mb-16">Future Productions</h2>
-        <div className="flex flex-wrap">
+        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/JATBshowpage-small.webp")'
             titleCard="Jack & The Beanstalk"
@@ -37,7 +37,7 @@ function Productions() {
             anchor="/jackAndTheBeanstalk"
             buttonCard="Find out more"
           />
-          <CardUp
+          <CardDown
             backImage='url("/SToddshowpage.webp")'
             titleCard="Sweeney Todd"
             paragraph2="23 - 29 April 2023"
@@ -56,8 +56,8 @@ function Productions() {
 
       <div className="container mx-auto px-4 md:mt-12">
         <h2 className="h2-brand mb-16">Recent Productions</h2>
-        <div className="flex flex-wrap">
-          <CardDown
+        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+          <CardUp
             backImage='url("/TWSshowpage-small.webp")'
             titleCard="the wedding singer"
             paragraph2="April 2022"
@@ -71,7 +71,7 @@ function Productions() {
             anchor="/tellMeOnASunday"
             buttonCard="See the journey"
           />
-          <CardDown
+          <CardUp
             backImage='url("/RHshowpage-small.webp")'
             titleCard="robin hood 
             panto "

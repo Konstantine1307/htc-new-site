@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import tiobe from '/public/TIOBEhomepage.webp'
 import TheGroup from "./theGroup"
 import CardDown from "../components/customcards/cardDown";
-import CardUp from "../components/customcards/cardUp";
+// import CardUp from "../components/customcards/cardUp";
 import Welcome from "../components/welcome";
 
 
@@ -23,8 +23,8 @@ function Index() {
         button="Next Production"
         linkToPage="/tiobe"
       />
-      <div className="container mx-auto px-4 pt-4 md:mt-12">
-        <div className="flex flex-wrap">
+      <div className="container  px-4 pt-4 md:mt-12">
+        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/card-background1.webp")'
             titleCard="3+ Shows/year"
@@ -32,7 +32,7 @@ function Index() {
             anchor="/productions"
             buttonCard="Find out more"
           />
-          <CardUp
+          <CardDown
             backImage='url("/card-background5.webp")'
             titleCard="100+ Members"
             paragraph="For the community"

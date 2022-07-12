@@ -28,7 +28,7 @@ function About() {
         <GoBackButton />
       </div>
       <div className="container mx-auto px-4  md:mt-12">
-        <div className="flex flex-wrap">
+        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/card-background1.webp")'
             titleCard="awards"
@@ -36,7 +36,7 @@ function About() {
             anchor="#awards"
             buttonCard="Find out more"
           />
-          <CardUp
+          <CardDown
             backImage='url("/card-background5.webp")'
             titleCard="The Group"
             paragraph="For the community"

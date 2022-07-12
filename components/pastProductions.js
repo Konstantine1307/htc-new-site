@@ -147,12 +147,12 @@ const ProductionsData = () => {
   return (
     <>
       <section className="section-global container" id="past-productions">
-        <h2 className="h2-brand mb-20">
+        <h2 className="h2-brand my-20">
          Past Productions
         </h2>
         <div className="container">
           <p className="text-2xl text-center text-white pb-6 shadow-xl">Visit our production photo albums</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <ProductionCards data={projects_data} />
           </div>
         </div>
