@@ -73,8 +73,7 @@ function Productions() {
           />
           <CardUp
             backImage='url("/RHshowpage-small.webp")'
-            titleCard="robin hood 
-            panto "
+            titleCard="robin hood"
             paragraph2="January 2022"
             anchor="/robinHood"
             buttonCard="Annual Panto"

@@ -123,7 +123,7 @@ export default function Example() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-24 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -133,13 +133,64 @@ export default function Example() {
                     item.current
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                    "block px-3 py-2 rounded-md text-base font-medium, "
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
+                  <div className="w-8 mx-1 border border-b-prima border-x-0 border-t-0"></div>
                 </Disclosure.Button>
               ))}
+
+              <Link href="#">
+                <Menu as="div" className="pl-3 pt-2 z-10">
+                  <Menu.Button className="text-gray-300 hover:bg-gray-700 hover:text-white hover:scale-105 text-base  font-medium ">
+                    <span className="sr-only">Open user menu</span>
+                    Policies
+                  </Menu.Button>
+                  <div className="w-8 mx-1 border border-b-prima border-x-0 border-t-0"></div>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className="origin-top-left absolute left-10 mt-2 w-44 rounded-md shadow-lg py-1 bg-brandBlue ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link href="/about/#mission">
+                            <a
+                              className={classNames(
+                                active ? "bg-gray-700" : "",
+                                "block px-4 py-2 text-sm text-white"
+                              )}
+                            >
+                              Mission Statement
+                            </a>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link href="/about/#child-policy">
+                            <a
+                              className={classNames(
+                                active ? "bg-gray-700" : "",
+                                "block px-4 py-2 text-sm text-white"
+                              )}
+                            >
+                              Child Policy
+                            </a>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+              </Link>
               {/* Profile dropdown */}
               {/* <Menu as="div" className="relative z-10">
                 <div>

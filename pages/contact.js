@@ -103,9 +103,8 @@ function Contact() {
     <>
       <Hero
         title="HELSTON THEATRE COMPANY"
-        paragraph="Your preferred Theatre Group in South West Cornwall offer several
-        productions throughout the year. From Pantos to Musical and Plays,
-        we aim to share amazing shows with the support and participation
+        paragraph="From Pantomimes to Musicals and Plays,
+        we aim to perform amazing theatre with the support and participation
         of our community. It's where the community is."
         imageSrc={tiobe}
         width={488}

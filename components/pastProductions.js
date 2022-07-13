@@ -169,7 +169,7 @@ const ProductionCards = ({ data }) => {
       {data.map((props, i) => (
         <div className=" " key={i}>
           <div
-            className="group h-full rounded-md p-2 flex flex-col md:bg-gradient-to-b hover:from-pink-500 hover:to-cyan-500 md:hover:scale-105 md:hover:text-black duration-150 "
+            className="group h-full rounded-md p-2 flex flex-col md:bg-gradient-to-b md:hover:from-pink-500 md:hover:to-cyan-500 md:hover:scale-105 md:hover:text-black duration-300 "
             style={{ backgroundColor: `${props.color}da` }}
           >
             <div className="text-3xl mb-6 text-center  text-white shadow-xl shadow-cyan-800 group-hover:text-black duration-150 ">

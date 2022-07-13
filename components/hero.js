@@ -45,7 +45,7 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, heig
             <h1 className="font-heading md:text-3xl lg:text-4xl tracking-wider  text-white pb-3">
               {title}
             </h1>
-            <h2 className="font-sans tracking-wide text-white pb-8">
+            <h2 className="font-sans md:text-2xl tracking-wide text-white pb-8">
               {subtitle}
             </h2>
             <p className="text-sm md:text-xl text-white tracking-wide pb-3">
